@@ -2,7 +2,7 @@
   "name": "portfolioreact",
   "private": true,
   "version": "1.0.0",
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)",
+  "description": "",
   "main": "package.json",
   "author": "Soumadeep Dhar <nicksouma@gmail.com>",
   "license": "UNLICENSED",
@@ -25,5 +25,9 @@
     "react": "^17.0",
     "react-dom": "^17.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/s0umadeep/portfolio-me.git"
+  }
 }
