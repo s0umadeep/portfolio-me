@@ -43,7 +43,7 @@ export default function Project(){
                                 {new Date(project.date).toLocaleDateString()}
                             </span>
                             <span> 
-                                <strong className="font-bold"> Company </strong>:{" "}
+                                <strong className="font-bold"> Organization </strong>:{" "}
                                 {project.place}
                             </span>
                             <span>
