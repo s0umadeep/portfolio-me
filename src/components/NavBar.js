@@ -36,7 +36,6 @@ export default function NavBar(){
                     <SocialIcon url ="https://www.instagram.com/s0umadeep/" className ="mr-4" target="_blank" fgColor="#fff" style={{height:35, width:35}}/>
                     <SocialIcon url ="https://www.quora.com/profile/Soumadeep-Dhar" className ="mr-4" target="_blank" fgColor="#fff" style={{height:35, width:35}}/>
                 </div>
-
             </div>
         </header>
     );

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client.js";
-import "../App.css"
+import "../App.css";
+import {Spring} from "react-spring/renderprops";
+
 
 export default function Project(){
     const [projectData, setProjectData] = useState(null);
@@ -22,7 +24,15 @@ export default function Project(){
             <section className="container mx-auto">
                 <h1 className="text-5xl flex justify-center cursive">My Projects</h1>
                 <h2 className="text-lg text-gray-600 flex justify-center mb-12"> </h2>
-                <section className ="grid grid-cols-3 gap-10">
+
+                <Spring
+            from={{opacity:0}}
+            to={{opacity:1}}
+                config={{delay:1000}}
+                >
+                {props=>(
+                    <div style={props}>
+                        <section className ="grid grid-cols-3 gap-10">
                     
                     
                     {projectData && projectData.map((project,index)=>(
@@ -59,6 +69,10 @@ export default function Project(){
                         </div>
                     </article>))}
                 </section>
+                    </div>
+                ) }
+            
+            </Spring>               
             </section>
         </main>
     );

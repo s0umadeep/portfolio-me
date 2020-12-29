@@ -3,6 +3,8 @@ import sanityClient from "../client.js";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 import "../App.css";
+import {Spring} from "react-spring/renderprops";
+
 
 
 
@@ -27,6 +29,14 @@ export default function About(){
     if(!author) return<div>Loading...</div>
     return(
         <main className="Layout">
+
+<Spring
+            from={{opacity:0,marginTop:-500 }}
+            to={{opacity:1,marginTop:0 }}>
+
+                {props=>(
+                    <div style={props}>
+
             <div className="p-10 lg:pt-48 container mx-auto relative">
                 <section className="bg-gray-800 rounded-lg shadow-2xl lg:flex p-20">
                 <img src ={urlFor(author.authorImage).url()} className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8" alt={author.name}/>
@@ -42,7 +52,22 @@ export default function About(){
                 </div>
                 </div>
                 </section>
-            </div>
+                </div>
+                </div>
+                ) }
+            
+            </Spring>
+
+
+
+
+
+
+
+
+
+
+           
             <footer className="bg-white">Developed by Soumadeep ❤ </footer>
         </main>
     );
