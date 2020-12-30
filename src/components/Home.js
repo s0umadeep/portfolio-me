@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from "react";
 import "../App.css";
 import {Spring} from "react-spring/renderprops";
+import Contact from "../components/contact.js";
 
 export default function Home(){
 
@@ -20,7 +21,7 @@ export default function Home(){
 
     return(
         <main className="Layout" >
-            <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
+            <section className="relative flex justify-center pt-12 lg:pt-60 px-8">
             <Spring
             from={{opacity:0,marginTop:-500 }}
             to={{opacity:1,marginTop:0 }}>
@@ -28,14 +29,15 @@ export default function Home(){
                 {props=>(
                     <div style={props}>
                     <h1 className =" text-4xl text-green-100 font-bold cursive leading-none lg:leading-snug home-name"> Hey there, I'm Soumadeep </h1>
-                    <p className =" text-3xl text-green-100 font-bold bg-black pl-10 ml-2 cursive leading-none lg:leading-snug ">Thanks for visiting my website, Please navigate through the links to know more...</p>
-                    <p className =" text-3xl text-green-100 bg-black font-bold pl-10 ml-2 cursive leading-none lg:leading-snug  " > Visitor count : {visit} </p>
-
-                    </div>
+                    <p className =" text-3xl text-green-100 font-bold pl-10 ml-2 cursive leading-none lg:leading-snug ">Thanks for visiting my website, Please navigate through the links to know more...</p>
+                    <p className =" text-3xl text-green-100 font-bold pl-10 ml-2 cursive leading-none lg:leading-snug  " > Visitor count : {visit} </p>
+                    </div>    
                 ) }
-            
             </Spring>
             </section>
+            <div className="grid p-12 mx-auto pt-12  justify-center my-auto container relative">
+            <Contact/> 
+            </div> 
             <footer className="bg-white" >Developed by Soumadeep ❤ </footer>
         </main>
     );
