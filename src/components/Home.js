@@ -28,17 +28,18 @@ export default function Home(){
 
                 {props=>(
                     <div style={props}>
-                    <h1 className =" text-4xl text-green-100 font-bold cursive leading-none lg:leading-snug home-name"> Hey there, I'm Soumadeep </h1>
-                    <p className =" text-3xl text-green-100 font-bold pl-10 ml-2 cursive leading-none lg:leading-snug ">Thanks for visiting my website, Please navigate through the links to know more...</p>
-                    <p className =" text-3xl text-green-100 font-bold pl-10 ml-2 cursive leading-none lg:leading-snug  " > Visitor count : {visit} </p>
-                    </div>    
+                    {/* <h2 className =" text-4xl text-green-100 font-bold cursive leading-none lg:leading-snug home-name"> </h2> */}
+                    <p className =" text-4xl text-green-100 font-bold pl-10 ml-2 cursive leading-none lg:leading-snug ">Thanks for visiting my website, Please navigate through the links to know more...</p>
+                    <p className =" text-4xl text-green-100 font-bold pl-10 ml-2 cursive leading-none lg:leading-snug  " > Visitor count : {visit} </p>
+                    <div className="grid p-12 mx-auto pt-12  justify-center my-auto container relative">
+                    {/* <p className =" text-4xl text-green-100 font-bold cursive leading-none lg:leading-snug" > Contact Me {" "} </p> */}
+                    <Contact/> 
+                    </div> 
+                    </div>  
                 ) }
             </Spring>
             </section>
-            <div className="grid p-12 mx-auto pt-12  justify-center my-auto container relative">
-            <Contact/> 
-            </div> 
-            <footer className="bg-white" >Developed by Soumadeep ❤ </footer>
+            <footer className="bg-white" >Developed by Soumadeep ❤ {"  "} Copyright © 2020, All rights reserved </footer>
         </main>
     );
 

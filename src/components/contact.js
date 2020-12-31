@@ -27,7 +27,8 @@ const Contact = () => {
     };
 
     return (
-        <form className="bg-gray-200 rounded-lg shadow-2xl p-20 form" onSubmit={HandleSubmit}>           
+        <form className="bg-gray-200 rounded-lg shadow-2xl p-20 form" onSubmit={HandleSubmit}>  
+         
             <label className="text-3xl text-white-100 font-bold cursive">Name</label>
             <input placeholder="Name" value={name} onChange={(e) => SetName(e.target.value)}/>
 
