@@ -1,6 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import {SocialIcon} from "react-social-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome} from '@fortawesome/free-solid-svg-icons';
+
 
 export default function NavBar(){
 
@@ -11,7 +14,7 @@ export default function NavBar(){
                     <NavLink to = "/" exact 
                     activeClassName="text-white"
                     className="inflex-flex items-center py-7 px-3 mr-4 text-red-100 hover:text-green-200 text-4xl font-bold cursive tracking-widest" >
-                        Home
+                    <FontAwesomeIcon icon={faHome} className="text-white text-3xl"/>
                     </NavLink>
                     <NavLink to ="/post" 
                     activeClassName="text-red-100 bg-gray-600"

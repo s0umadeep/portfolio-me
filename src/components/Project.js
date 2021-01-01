@@ -32,7 +32,7 @@ export default function Project(){
                 >
                 {props=>(
                     <div style={props}>
-                        <section className ="grid grid-cols-3 gap-10">
+                        <section className ="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                     
                     
                     {projectData && projectData.map((project,index)=>(
