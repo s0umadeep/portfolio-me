@@ -3,12 +3,12 @@ import { NavLink } from "react-router-dom";
 import {SocialIcon} from "react-social-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome} from '@fortawesome/free-solid-svg-icons';
-
+import "../App.css";
 
 export default function NavBar(){
 
     return(
-        <header className="bg-gray-900">
+        <header className="NavCSS">
             <div className="container mx-auto flex justify-around"> 
                 <nav className="flex">
                     <NavLink to = "/" exact 

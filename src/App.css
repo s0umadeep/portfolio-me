@@ -30,3 +30,16 @@
     rgba(70, 252, 222, 1) 100%
   );
 }
+
+.AboutContainer {
+  background: linear-gradient(
+    180deg,
+    rgb(78, 83, 95) 3%,
+    rgba(0, 0, 0, 0.719) 100%
+  );
+}
+
+.NavCSS {
+  max-height: 100px;
+  background: linear-gradient(180deg, rgb(14, 37, 95) 3%, rgb(6, 53, 45) 100%);
+}
