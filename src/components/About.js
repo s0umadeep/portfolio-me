@@ -64,7 +64,7 @@ export default function About(){
                 ) }
             
             </Spring>
-            <footer className="bg-white" >Developed by Soumadeep ❤ {"  "} Copyright © 2020, All rights reserved </footer>
+            <footer className="bg-white" >Developed by Soumadeep ❤ {"  "} Copyright © 2021, All rights reserved </footer>
         </main>
     );
 }
