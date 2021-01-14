@@ -43,3 +43,14 @@
   max-height: 100px;
   background: linear-gradient(180deg, rgb(14, 37, 95) 3%, rgb(6, 53, 45) 100%);
 }
+.Appx {
+  display: flex;
+  flex: content;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Profile-image {
+  /* border-radius: 50%; */
+  padding: None;
+}

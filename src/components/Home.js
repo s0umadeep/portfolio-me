@@ -2,6 +2,7 @@ import React,{useState,useEffect} from "react";
 import "../App.css";
 import {Spring} from "react-spring/renderprops";
 import Contact from "../components/contact.js";
+import Tweet from "./Tweet"
 
 export default function Home(){
 
@@ -21,7 +22,12 @@ export default function Home(){
 
     return(
         <main className="Layout" >
+       
             <section className="relative flex justify-center pt-12 lg:pt-60 px-8">
+            <div className = "Appx grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5"> 
+            <Tweet/> <Tweet />
+            <Tweet /> <Tweet />
+        </div>
             <Spring
             from={{opacity:0,marginTop:-500 }}
             to={{opacity:1,marginTop:0 }}>
@@ -39,7 +45,7 @@ export default function Home(){
                 ) }
             </Spring>
             </section>
-            <footer className="bg-white" >Developed by Soumadeep ❤ {"  "} Copyright © 2020, All rights reserved </footer>
+            <footer className="bg-white" >Developed by Soumadeep ❤ {"  "} Copyright © 2021, All rights reserved </footer>
         </main>
     );
 
