@@ -16,6 +16,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: white;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
 }
 
 .form > input,
