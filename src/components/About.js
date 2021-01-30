@@ -40,13 +40,13 @@ export default function About(){
                 <section className="AboutContainer rounded-lg shadow-2xl lg:flex p-20">
                 <img src ={urlFor(author.authorImage).url()} className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8" alt={author.name}/>
                 <div className="text-lg flex flex-col justify-center">
-                <h1 className="cursive text-4xl text-green-300 mb-4">
+                <h1 className="cursive text-4xl text-green-700 mb-4">
                     Hey there, I'm {" "}
-                <span className="text-green-100">
+                <span className="text-green-600">
                     {author.name}
                 </span>
                 </h1>
-                <div className="lg:prose-l text-white">
+                <div className="lg:prose-l text-black">
                 <BlockContent blocks={author.bio} projectId=" 2c4qxtuv" dataset="production"/>
                 </div>                
                 </div>
