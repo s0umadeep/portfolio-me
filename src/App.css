@@ -55,12 +55,3 @@
   min-width: 20;
   padding: None;
 }
-
-.Contact {
-  background: white;
-  background: linear-gradient(
-    to right-bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.3)
-  );
-}
